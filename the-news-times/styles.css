@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-banner-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner {
+    font-size: 60px;
+    font-weight: 100;
+    padding: 50px;
+    font-family: "Snell Roundhand";
+    color: black; 
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center stretch;
+    text-align: left;
+    justify-content: center space-evenly;
+  }
+
+  .flex-item-center {
+    background:white;
+    width: 50%;
+    border: 1px solid black;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  .center-image {
+      width: 100%;
+  }
+
+  .flex-item-side {
+    background:white;
+    width: 25%;
+    border: 1px solid black;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+
+  .article-heading {
+    font-size: 30px;
+    font-style: italic;  
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .paragraph {
+      font-family: inherit;
+      font-size: 16px;
+  }
