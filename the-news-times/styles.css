@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -15,7 +14,7 @@
     padding: 50px;
     padding-bottom: 33px;
     font-family: "Snell Roundhand";
-    color: black; 
+    color: black;
 }
 
 .flex-container {
@@ -30,16 +29,17 @@
     padding: 0.5em;
 }
 
-  .flex-item-center {
-    background:white;
+.flex-item-center {
+    background: white;
     width: 50%;
     border: 0.5px solid black;
     border-top-width: 3px;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    padding-bottom: 1em;
 }
 
-  .flex-item-side {
-    background:white;
+.flex-item-side {
+    background: white;
     width: 25%;
     border: 0.5px solid black;
     border-top-width: 3px;
@@ -47,32 +47,32 @@
     padding-right: 1em;
 }
 
-  .flex-item-news-links {
-    background:white;
+.flex-item-news-links {
+    background: white;
     width: 75%;
     border: 0.5px solid black;
     border-top-width: 3px;
 }
 
-  .center-image {
+.center-image {
     width: 100%;
     padding-bottom: 1em;
 }
 
-  .article-heading {
+.article-heading {
     font-size: 30px;
-    font-style: italic;  
+    font-style: italic;
     text-align: center;
     padding-top: 0.6em;
     padding-bottom: 1em;
 }
 
-  .paragraph {
-      font-family: inherit;
-      font-size: 16px;
+.paragraph {
+    font-family: inherit;
+    font-size: 16px;
 }
 
-  .topics {
+.topics {
     display: flex;
     flex-direction: column;
     border: 0.5px solid black;
@@ -97,7 +97,7 @@
 
 .politics:hover {
     text-decoration: underline;
- }
+}
 
 .technology {
     background: #81ecec;
@@ -105,30 +105,30 @@
 
 .technology:hover {
     text-decoration: underline;
- }
+}
 
-  .local {
+.local {
     background: #55efc4;
 }
 
 .local:hover {
     text-decoration: underline;
- }
+}
 
-  .opinion {
+.opinion {
     background: #74b9ff;
 }
 
 .opinion:hover {
     text-decoration: underline;
- }
+}
 
-  .sports {
+.sports {
     background: #a29bfe;
 }
 
 .sports:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 a {
