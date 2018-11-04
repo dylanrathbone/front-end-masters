@@ -84,63 +84,50 @@
     font-weight: bolder;
 }
 
-   .politics-list-item {
+.list-item {
     padding-left: 1em;
     padding-top: 0.5em;
     height: 50%;
+    text-decoration: none;
+}
+
+.politics {
     background: #ffeaa7;
-    text-decoration: none;
 }
 
-.politics-list-item:hover {
+.politics:hover {
     text-decoration: underline;
  }
 
-  .technology-list-item {
-    padding-left: 1em;
-    padding-top: 0.5em;
-    height: 50%;
+.technology {
     background: #81ecec;
-    text-decoration: none;
 }
 
-.technology-list-item:hover {
+.technology:hover {
     text-decoration: underline;
  }
 
-  .local-list-item {
-    padding-left: 1em;
-    padding-top: 0.5em;
-    height: 50%;
+  .local {
     background: #55efc4;
-    text-decoration: none;
 }
 
-.local-list-item:hover {
+.local:hover {
     text-decoration: underline;
  }
 
-  .opinion-list-item {
-    padding-left: 1em;
-    padding-top: 0.5em;
-    height: 50%;
+  .opinion {
     background: #74b9ff;
-    text-decoration: none;
 }
 
-.opinion-list-item:hover {
+.opinion:hover {
     text-decoration: underline;
  }
 
-  .sports-list-item {
-    padding-left: 1em;
-    padding-top: 0.5em;
-    height: 50%;
+  .sports {
     background: #a29bfe;
-    text-decoration: none;
 }
 
-.sports-list-item:hover {
+.sports:hover {
    text-decoration: underline;
 }
 
