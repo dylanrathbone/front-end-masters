@@ -18,39 +18,93 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center stretch;
-    text-align: left;
+    text-align: center;
     justify-content: center space-evenly;
     padding: 6em 43em;
 }
 
 .lcd-display {
-    background: white;
+    background: black;
     width: 100%;
     border: 0.5px solid black;
-    border-top-width: 3px;
-    padding: 1em 1em;
+    /* vertically align text */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* horizontally align text */
+    text-align: right;
+    color: white;
+    padding: 0 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
 
 .clear-button {
-    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d8d9db;
     width: 50%;
     border: 0.5px solid black;
-    border-top-width: 3px;
-    padding: 1em 1em;
+}
+
+.clear-button:hover {
+    background-color: #efeff0;
 }
 
 .button {
-    background: white;
+    /* vertically align text */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* horizontally align text */
+    text-align: center;
+    background-color: #d8d9db;
     width: 25%;
     border: 0.5px solid black;
-    border-top-width: 3px;
-    padding: 1em 1em;
+}
+
+.button:hover {
+    background-color:  #efeff0;
+}
+
+.operator-button {
+    /* vertically align text */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* horizontally align text */
+    text-align: center;
+    width: 25%;
+    border: 0.5px solid black;
+}
+
+.operator-button:hover{
+    background-color: #e8b681; 
 }
 
 .zero-button {
-    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d8d9db;
     width: 75%;
     border: 0.5px solid black;
-    border-top-width: 3px;
-    padding: 1em 1em;
+}
+
+.zero-button:hover {
+    background-color:  #efeff0;
+}
+
+.button-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.operator-color {
+    color: white;
+    background-color: #df974c;
 }
