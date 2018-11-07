@@ -4,13 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="calculator.js"></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="desktop">
         <div class="calculator">
-                <div class="lcd-display">0</div>
-                <div class="clear-button">
+
+                <input class="lcd-display lcd-display-text" type="text" id="lcd-display" name="lcd-display" minlength="1" maxlength="16" placeholder="0" />
+
+                <div class="clear-button" type="button" onclick="zeroDisplay()">
                     <div class="button-text">C</div>
                 </div>
                 <div class="button">
@@ -55,7 +58,7 @@
                 <div class="operator-button operator-color">
                         <div class="button-text">&#43;</div>
                 </div>
-                <div class="zero-button">
+                <div class="zero-button" type="button" onclick="addZero()">
                         <div class="button-text">0</div>
                 </div>
                 <div class="operator-button operator-color">
@@ -65,4 +68,4 @@
         <div class="padding-right"></div>
     </div>
 </body>
-</html>
+</html

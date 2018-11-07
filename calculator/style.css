@@ -33,9 +33,12 @@
     flex-direction: column;
     /* horizontally align text */
     text-align: right;
+}
+
+.lcd-display-text {
     color: white;
     padding: 0 0.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: 50px;
 }
 
