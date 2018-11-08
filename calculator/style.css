@@ -57,7 +57,7 @@
 }
 
 
-.button {
+.number-button {
     /* vertically align text */
     display: flex;
     justify-content: center;
@@ -69,7 +69,7 @@
     border: 0.5px solid black;
 }
 
-.button:hover {
+.number-button:hover {
     background-color:  #efeff0;
 }
 
@@ -85,6 +85,21 @@
 }
 
 .operator-button:hover{
+    background-color: #e8b681; 
+}
+
+.equals-button {
+    /* vertically align text */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* horizontally align text */
+    text-align: center;
+    width: 25%;
+    border: 0.5px solid black;
+}
+
+.equals-button:hover{
     background-color: #e8b681; 
 }
 
