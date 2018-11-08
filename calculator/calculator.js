@@ -41,7 +41,7 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
         console.log(`value1 is: ${value1}`);
         console.log(`value2 is: ${value2}`);
         console.log(`math operator to use is: ${operatorSymbol}`);
-        if(operatorSymbol === '+') {
+        if(operatorSymbol == '+') {
             console.log('performing addition');
             calculatedValue = parseInt(value1, 10) + parseInt(value2, 10);
         } else if (operatorSymbol === '-') {
@@ -54,6 +54,7 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
             console.log('performing division');
             calculatedValue = parseInt(value1, 10) / parseInt(value2, 10);
         }
+        console.log(`calculated value is: ${calculatedValue}`);
         lcdDisplay.value = calculatedValue;
         value1 = 0;
         value2 = 0;
