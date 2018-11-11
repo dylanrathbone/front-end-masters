@@ -54,16 +54,35 @@
 }
 
 
-.gray-button {
+.number-button {
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: #d8d9db;
     width: 25%;
     border: 0.5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
 }
 
-.gray-button:hover {
+.number-button:hover {
+    background-color:  #efeff0;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #d8d9db;
+    width: 25%;
+    border: 0.5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.delete-button:hover {
     background-color:  #efeff0;
 }
 
@@ -98,6 +117,9 @@
     background-color: #d8d9db;
     width: 75%;
     border: 0.5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .zero-button:hover {
@@ -140,13 +162,6 @@
 
 .equals-button-text::before {
     content: "\003D";
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.delete-button-text::before {
-    content: "\21E4";
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 400;
