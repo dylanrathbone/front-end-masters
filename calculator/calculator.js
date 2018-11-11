@@ -66,3 +66,5 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
         value2 = 0;
     }
 });
+
+
