@@ -8,7 +8,7 @@ let operatorSymbol = '';
 
 document.querySelector('.calculator').addEventListener('click', function(event) {
     let buttonClass = event.target.className;
-    if (buttonClass.includes('number-button') || buttonClass.includes('zero-button')) {
+    if (buttonClass.includes('gray-button') || buttonClass.includes('zero-button')) {
         console.log('number button clicked....');
         let buttonValue = event.target.innerText;
         if(!operatorButtonClicked) {
@@ -31,7 +31,7 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
         console.log(`Operator button hit: ${operatorSymbol}`);
         if(operatorButtonClicked === false) {
             operatorButtonClicked = true;
-            operatorSymbol = event.target.innerText;
+            operatorSymbol = event.target.className;
         } else {
             operatorButtonClicked = false;
         }
@@ -41,16 +41,16 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
         console.log(`value1 is: ${value1}`);
         console.log(`value2 is: ${value2}`);
         console.log(`math operator to use is: ${operatorSymbol}`);
-        if(operatorSymbol == '+') {
+        if(operatorSymbol.includes("addition")) {
             console.log('performing addition');
             calculatedValue = parseInt(value1, 10) + parseInt(value2, 10);
-        } else if (operatorSymbol === '-') {
+        } else if (operatorSymbol.includes("subtraction")) {
             console.log('performing subtraction');
             calculatedValue = parseInt(value1, 10) - parseInt(value2, 10);
-        } else if (operatorSymbol === 'x') {
+        } else if (operatorSymbol.includes("multiplication")) {
             console.log('performing mutiplication');
             calculatedValue = parseInt(value1, 10) * parseInt(value2, 10);
-        } else {
+        } else if (operatorSymbol.includes("division")) {
             console.log('performing division');
             calculatedValue = parseInt(value1, 10) / parseInt(value2, 10);
         }

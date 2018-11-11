@@ -45,7 +45,6 @@
 .clear-button {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     background-color: #d8d9db;
     width: 50%;
@@ -57,28 +56,22 @@
 }
 
 
-.number-button {
-    /* vertically align text */
+.gray-button {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    /* horizontally align text */
     text-align: center;
     background-color: #d8d9db;
     width: 25%;
     border: 0.5px solid black;
 }
 
-.number-button:hover {
+.gray-button:hover {
     background-color:  #efeff0;
 }
 
 .operator-button {
-    /* vertically align text */
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    /* horizontally align text */
     text-align: center;
     width: 25%;
     border: 0.5px solid black;
@@ -89,11 +82,8 @@
 }
 
 .equals-button {
-    /* vertically align text */
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    /* horizontally align text */
     text-align: center;
     width: 25%;
     border: 0.5px solid black;
@@ -106,7 +96,6 @@
 .zero-button {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     background-color: #d8d9db;
     width: 75%;
@@ -118,6 +107,48 @@
 }
 
 .button-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.multiplication-button-text::before {
+    content: "\00D7";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.addition-button-text::before {
+    content: "\002B";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.subtraction-button-text::before {
+    content: "\2212";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.division-button-text::before {
+    content: "\00F7";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.equals-button-text::before {
+    content: "\003D";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.delete-button-text::before {
+    content: "\21E4";
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 400;
