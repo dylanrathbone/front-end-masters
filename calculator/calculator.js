@@ -47,7 +47,7 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
             mathematicalExpression = [];
         } catch (error) {
             console.log(`Error evaluating mathematial expression ${error}`);
-            lcdDisplay.value = `ERR:SYNTAX`;
+            lcdDisplay.value = `Syntax ERROR`;
             mathematicalExpression = [];
         }
     }
