@@ -41,8 +41,14 @@ document.querySelector('.calculator').addEventListener('click', function(event) 
             expression = expression + value;
         });
         console.log(expression);
-        console.log(eval(`${expression}`));
-        lcdDisplay.value = eval(`${expression}`);
-        mathematicalExpression = [];
+        try {
+            console.log(eval(`${expression}`));
+            lcdDisplay.value = eval(`${expression}`);
+            mathematicalExpression = [];
+        } catch (error) {
+            console.log(`Error evaluating mathematial expression ${error}`);
+            lcdDisplay.value = `ERR:SYNTAX`;
+            mathematicalExpression = [];
+        }
     }
 });
