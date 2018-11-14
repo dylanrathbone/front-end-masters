@@ -48,7 +48,7 @@ function letsBuyPhones() {
                 console.log(`Next purchase [${nextTotalSpent}] will exceed set threshold [${getSpendingThreshold()}]. Purchases cancelled.`);
                 break;
             }
-            console.log(`Buying phone at: ${calculateTotal()} Balance is: ${getBankBalance()} `)
+            console.log(`Buying phone at: $${calculateTotal()} Balance is: $${getBankBalance()} `)
             buyAPhone();
             phoneCounter++;
         } else {
@@ -57,8 +57,8 @@ function letsBuyPhones() {
         }
     }
     console.log(`Balance exhausted. Phone(s) bought ${phoneCounter}`);
-    console.log(`Current balance: ${parseFloat(getBankBalance()).toFixed(2)}`);
-    console.log(`Total Spent: ${parseFloat(totalSpent).toFixed(2)}`);
+    console.log(`Current balance: $${getBankBalance().toFixed(2)}`);
+    console.log(`Total Spent: $${totalSpent.toFixed(2)}`);
 }
 
 setBankBalance();
