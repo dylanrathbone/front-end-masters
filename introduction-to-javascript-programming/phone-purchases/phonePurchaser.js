@@ -30,21 +30,18 @@ function calculateTax() {
 }
 
 function calculateTotal() {
-    return parseFloat(calculateSubTotal() + calculateTax()).toFixed(2);
+    return parseFloat((calculateSubTotal()) + parseFloat(calculateTax())).toFixed(2);
 }
 
 function buyAPhone() {
-    totalSpent += calculateSubTotal();
-    return bankBalance -= calculateSubTotal();
+    totalSpent += parseFloat(calculateTotal());
+    return bankBalance -= parseFloat(calculateTotal());
 }
 
 function letsBuyPhones() {
     let phoneCounter = 0;
-    while(totalSpent <= parseFloat(getSpendingThreshold())) {
-        console.log(totalSpent);
-        console.log(parseFloat(getSpendingThreshold()));
-        console.log(totalSpent + parseFloat(getSpendingThreshold()));
-        console.log(parseFloat(getBankBalance());
+    
+    while(totalSpent <= parseFloat(getSpendingThreshold())) {       
         if(parseFloat(getBankBalance()) >= parseFloat(calculateTotal())) {
             console.log(`Buying phone at: ${calculateTotal()} Balance is: ${getBankBalance()} `)
             buyAPhone();
@@ -54,7 +51,9 @@ function letsBuyPhones() {
             break;
         }
     }
-    console.log(`Balance exhausted. Phone bought ${phoneCounter}`);
+    console.log(`Balance exhausted. Phone(s) bought ${phoneCounter}`);
+    console.log(`Current balance: ${parseFloat(getBankBalance()).toFixed(2)}`);
+    console.log(`Total Spent: ${parseFloat(totalSpent).toFixed(2)}`);
 }
 
 setBankBalance();
