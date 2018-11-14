@@ -30,7 +30,7 @@ function calculateTax() {
 }
 
 function calculateTotal() {
-    return parseFloat((calculateSubTotal()) + parseFloat(calculateTax()));
+    return (calculateSubTotal() + calculateTax());
 }
 
 function buyAPhone() {
@@ -41,7 +41,7 @@ function buyAPhone() {
 function letsBuyPhones() {
     let phoneCounter = 0;
     
-    while(totalSpent <= parseFloat(getSpendingThreshold())) {       
+    while(totalSpent <= getSpendingThreshold()) {       
         if(getBankBalance() >= calculateTotal()) {
             let nextTotalSpent = totalSpent + calculateTotal();
             if (nextTotalSpent >= getSpendingThreshold()) {
