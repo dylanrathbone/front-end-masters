@@ -43,6 +43,11 @@ function letsBuyPhones() {
     
     while(totalSpent <= parseFloat(getSpendingThreshold())) {       
         if(parseFloat(getBankBalance()) >= parseFloat(calculateTotal())) {
+            let nextTotalSpent = totalSpent + parseFloat(calculateTotal());
+            if (nextTotalSpent >= parseFloat(getSpendingThreshold())) {
+                console.log(`Next purchase [${nextTotalSpent}] will exceed set threshold [${getSpendingThreshold()}]. Purchases cancelled.`);
+                break;
+            }
             console.log(`Buying phone at: ${calculateTotal()} Balance is: ${getBankBalance()} `)
             buyAPhone();
             phoneCounter++;
