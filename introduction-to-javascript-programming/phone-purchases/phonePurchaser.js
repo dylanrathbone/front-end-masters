@@ -14,7 +14,7 @@ function setSpendingThreshold() {
 }
 
 function getBankBalance() {
-    return parseFloat(bankBalance).toFixed(2);
+    return bankBalance;
 }
 
 function getSpendingThreshold() {
@@ -30,21 +30,21 @@ function calculateTax() {
 }
 
 function calculateTotal() {
-    return parseFloat((calculateSubTotal()) + parseFloat(calculateTax())).toFixed(2);
+    return parseFloat((calculateSubTotal()) + parseFloat(calculateTax()));
 }
 
 function buyAPhone() {
-    totalSpent += parseFloat(calculateTotal());
-    return bankBalance -= parseFloat(calculateTotal());
+    totalSpent += calculateTotal();
+    return bankBalance -= calculateTotal();
 }
 
 function letsBuyPhones() {
     let phoneCounter = 0;
     
     while(totalSpent <= parseFloat(getSpendingThreshold())) {       
-        if(parseFloat(getBankBalance()) >= parseFloat(calculateTotal())) {
-            let nextTotalSpent = totalSpent + parseFloat(calculateTotal());
-            if (nextTotalSpent >= parseFloat(getSpendingThreshold())) {
+        if(getBankBalance() >= calculateTotal()) {
+            let nextTotalSpent = totalSpent + calculateTotal();
+            if (nextTotalSpent >= getSpendingThreshold()) {
                 console.log(`Next purchase [${nextTotalSpent}] will exceed set threshold [${getSpendingThreshold()}]. Purchases cancelled.`);
                 break;
             }
