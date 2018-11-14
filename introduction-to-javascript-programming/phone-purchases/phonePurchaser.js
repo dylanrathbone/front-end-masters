@@ -1,9 +1,9 @@
 let bankBalance = 0;
 let spendingThreshold = 0;
 let totalSpent = 0;
-const taxRate = 12.5;
-const phonePrice = 1250.00;
-const accessoryPrice = 50.00;
+const TAX_RATE = 12.5;
+const PHONE_PRICE = 1250.00;
+const ACCESSORY_PRICE = 50.00;
 
 function setBankBalance() {
     bankBalance = prompt('Please enter your bank balance: ');
@@ -22,11 +22,11 @@ function getSpendingThreshold() {
 }
 
 function calculateSubTotal() {
-    return phonePrice + accessoryPrice;
+    return PHONE_PRICE + ACCESSORY_PRICE;
 }
 
 function calculateTax() {
-    return (taxRate / 100) * calculateSubTotal();
+    return (TAX_RATE / 100) * calculateSubTotal();
 }
 
 function calculateTotal() {
