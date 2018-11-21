@@ -1,8 +1,12 @@
 /*
- A custom implementation of the 'map' function provided
- by underscorejs. 
+    A custom implementation of the 'map' function provided
+    by underscorejs. 
 */
 
+
+/*
+    Implementation of map
+*/
 const _ = {};
 
 _.map = function(list, callback) {
@@ -13,8 +17,15 @@ _.map = function(list, callback) {
     return array;
 }
 
+/*
+    Call map implementation
+*/
 let myList = ['Dylan', 'Emma', 'Merlin'];
 
-_.map(myList, function(element) {
+let newArray = _.map(myList, element => {
     return `${element} is cool`;
 });
+
+newArray.forEach(element => {
+    console.log(element);
+})
