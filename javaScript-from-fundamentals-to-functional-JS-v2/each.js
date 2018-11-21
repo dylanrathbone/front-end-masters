@@ -1,3 +1,8 @@
+/*
+ A custom implementation of the 'each' function provided
+ by underscorejs. 
+*/
+
 const _ = {};
 
 /*
