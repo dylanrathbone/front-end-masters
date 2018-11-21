@@ -11,6 +11,12 @@ const _ = {};
 _.each = function(list, callback) {
     if(Array.isArray(list)) {
         for(let i = 0; i < list.length; i++) {
+            /*
+                Execute call back, passing it:
+                1. The current array value
+                2. The current array index
+                3. The list itself
+            */
             callback(list[i], i, list)
         }
     } else {
