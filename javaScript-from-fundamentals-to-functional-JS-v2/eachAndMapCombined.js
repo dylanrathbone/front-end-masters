@@ -26,6 +26,9 @@ _.map = function(list, callback) {
     return array;
 }
 
+/*
+    Call custom methods...
+*/
 let myList = ['Dylan', 'Emma', 'Merlin'];
 
 let newArray = _.map(myList, element => {
