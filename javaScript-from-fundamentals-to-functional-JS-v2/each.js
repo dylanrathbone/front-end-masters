@@ -10,7 +10,7 @@ _.each = function(list, callback) {
         }
     } else {
         for(let property in list) {
-            callback(list[property], property, list);
+            callback(list.property, property, list);
         }
     }
 }
