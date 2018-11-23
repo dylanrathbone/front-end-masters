@@ -1,11 +1,31 @@
 /*
- Map will take an array, and for each of its elements,
- perform an action/transformation on each element returning
- a new array as the result.
+    A custom implementation of the 'map' function provided
+    by underscorejs. 
 */
 
-const weapons = ['candlestick', 'lead pipe', 'revolver'];
 
-_.map(weapons, function(weapon){
-    return `The ${weapon} is broken`;
+/*
+    Implementation of map
+*/
+const _ = {};
+
+_.map = function(list, callback) {
+    let array = [];
+    list.forEach(element => {
+        array.push(callback(element));
+    });
+    return array;
+}
+
+/*
+    Call map implementation
+*/
+let myList = ['Dylan', 'Emma', 'Merlin'];
+
+let newArray = _.map(myList, element => {
+    return `${element} is cool`;
 });
+
+newArray.forEach(element => {
+    console.log(element);
+})

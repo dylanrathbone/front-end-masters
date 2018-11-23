@@ -1,6 +1,38 @@
-import { _ } from './dunderscore.mjs'; 
-let _ = _();
+/*
+ A custom implementation of the 'filter' function provided
+ by underscorejs. 
+*/
 
+const _ = {};
+
+_.each = function(list, callback) {
+    if(Array.isArray(list)) {
+        for(let i = 0; i < list.length; i++) {
+            callback(list[i], i, list)
+        }
+    } else {
+        for(let property in list) {
+            callback(list.property, property, list);
+        }
+    }
+}
+
+/*
+    Define filter
+*/
+_.filter = function(list, callback) {
+    let buffer = [];
+    _.each(list, function(v, i, list) {
+        if(callback(v, i, list)) {
+            buffer.push(v);
+        }
+    });
+    return buffer;
+}
+
+/*
+ Call ._filter
+*/
 const videoData = [
     {
         name: 'Miss Scarlet',
@@ -76,6 +108,10 @@ const videoData = [
     }
 ];
 
-_.each(videoData, function(v, i, videoData){
-    console.log(v);
-})
+let filteredList = _.filter(videoData, function(element) {
+    return element.present;
+});
+
+filteredList.forEach(function(element) {
+    console.log(element);
+});

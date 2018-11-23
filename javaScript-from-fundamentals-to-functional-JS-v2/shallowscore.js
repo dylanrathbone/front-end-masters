@@ -30,6 +30,6 @@ _.filter = function(list, callback) {
     return buffer;
 }
 
-export function dunderscore() {
+export function shallowScore() {
     return _;
 }
