@@ -5,6 +5,10 @@
 
 const _ = {};
 
+/*
+    Our filter implementation will make use  
+    of the already defined _.each method 
+*/
 _.each = function(list, callback) {
     if(Array.isArray(list)) {
         for(let i = 0; i < list.length; i++) {
