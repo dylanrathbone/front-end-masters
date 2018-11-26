@@ -31,8 +31,6 @@ console.log(`Square called : ${doMathSoIDontHaveTo(5, square)}`);
 /*
     Translate Example 2 (above) into ES6 i.e. arrow notation
 */
- 
-
 var incrementEs6 = (n) => { return n + 1; }
 
 var squareEs6 = (n) => { return n * n; }
@@ -45,7 +43,6 @@ console.log(`Square called (ES6): ${doMathSoIDontHaveToEs6(5, square)}`);
 /*
     Different take on ES6 syntax
 */
-
 var incrementEs6V1 = (n) =>  n + 1; 
 
 var squareEs6V1 = (n) =>  n * n; 
