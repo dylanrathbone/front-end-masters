@@ -9,8 +9,9 @@
     call stack, however 'x' and 'count' are 
     not. They remain on the call stack. 
     
-    This examples the complexities of scope 
-    and caveats of the call stack.
+    This examples highlights some of the 
+    complexities of scope and caveats of 
+    the call stack.
 */
 
 const myAlert = () => {
