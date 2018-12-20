@@ -50,3 +50,20 @@ console.log(map([2, 3, 4, 5], multiplyByTwo));
 Challenge 4
 The function forEach takes an array and a callback, and runs the callback on each element of the array. forEach does not return anything.
 */
+function forEach(array, callback) {
+    for(let element in array) {
+        callback(element);
+    }
+}
+
+var alphabet = '';
+var letters = ['a', 'b', 'c', 'd', 'e', 'f'];
+forEach(letters, function(char) {
+  alphabet += char;
+});
+console.log(`Calling forEach: ${alphabet}`); 
+
+/*
+Extension 2
+The function reduce takes an array and reduces the elements to a single value. For example it can sum all the numbers, multiply them, or any operation that you can put into a function.
+*/
