@@ -52,7 +52,7 @@ The function forEach takes an array and a callback, and runs the callback on eac
 */
 function forEach(array, callback) {
     for(let element in array) {
-        callback(element);
+        callback(array[element]);
     }
 }
 
