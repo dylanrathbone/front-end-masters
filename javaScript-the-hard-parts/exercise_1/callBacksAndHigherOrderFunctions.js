@@ -74,30 +74,13 @@ console.log(`Calling forEach: ${alphabet}`);
  * to a single value. For example it can sum all the numbers, 
  * multiply them, or any operation that you can put into a function.
  */
-
-
- function reduce(numbers, operation, accumulator) {
+ function reducer(numbers, operation, accumulator) {
     let reduction = accumulator;
-    for(let i = 0; i <= numbers.length; i++) {
+    for(let i = 0; i < numbers.length; i++) {
         reduction = operation(numbers[i], reduction);
     }     
-    console.log(`Value is: ${reduction}`);
+    return reduction;
  }
 
  function add(a, b) { return a + b; }; 
-
-console.log('Calling reducer now...');
-console.log(reduce([4, 1, 3], add, 0)); 
-
-
-// function reduce(array, callback, initialValue) {
-//     let total = initialValue;
-//     for (let i = 0; i < array.length; i++) {
-//         total = callback(total, array[i]);
-//     }
-//     return total;
-// }
-
-// var add = function (a, b) { return a + b; };
-// var nums = [4, 1, 3];
-// console.log(reduce(nums, add, 0));
+console.log(reducer([4, 1, 3], add, 0)); 
