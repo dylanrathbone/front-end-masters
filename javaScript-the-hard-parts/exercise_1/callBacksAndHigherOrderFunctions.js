@@ -90,14 +90,14 @@ console.log('Calling reducer now...');
 console.log(reduce([4, 1, 3], add, 0)); 
 
 
-function reduce(array, callback, initialValue) {
-    let total = initialValue;
-    for (let i = 0; i < array.length; i++) {
-        total = callback(total, array[i]);
-    }
-    return total;
-}
+// function reduce(array, callback, initialValue) {
+//     let total = initialValue;
+//     for (let i = 0; i < array.length; i++) {
+//         total = callback(total, array[i]);
+//     }
+//     return total;
+// }
 
-var add = function (a, b) { return a + b; };
-var nums = [4, 1, 3];
-console.log(reduce(nums, add, 0));
+// var add = function (a, b) { return a + b; };
+// var nums = [4, 1, 3];
+// console.log(reduce(nums, add, 0));
