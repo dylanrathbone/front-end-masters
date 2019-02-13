@@ -84,3 +84,39 @@ console.log(`Calling forEach: ${alphabet}`);
 
  function add(a, b) { return a + b; }; 
 console.log(reducer([4, 1, 3], add, 0)); 
+
+/*
+ * Extension 3
+ * Construct a function intersection that compares input 
+ * arrays and returns a new array with elements found in 
+ * all of the inputs. BONUS: Use reduce!
+ */
+ function intersection(list1, list2) {
+     let intersection = [];
+     list1.forEach(list1_element => {
+         list2.forEach(list2_element => {
+             if(list1_element === list2_element) {
+                 intersection.push(list2_element);
+             }
+         })
+     });
+     return intersection
+ }
+
+
+ let matches = intersection([1,3,4,9,12,10,0,6], [2,3,9,12,6,0]);
+ console.log(matches);
+
+ /*
+ * Extension 4
+ * Construct a function union that compares input arrays and 
+ * returns a new array that contains all elements. If there 
+ * are duplicate elements, only add it once to the new array. 
+ * Preserve the order of the elements starting from the first 
+ * element of the first input array. BONUS: Use reduce!
+ */
+
+ function union(list1, list2) {
+     let union = [];
+     return union;
+ }
