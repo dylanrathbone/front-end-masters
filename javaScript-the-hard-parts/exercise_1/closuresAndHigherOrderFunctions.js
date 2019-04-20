@@ -24,7 +24,6 @@
   * was created.
   */
 
-
   function createFunctionPrinter(){
       function printInput(input) {
           console.log(`This was your input: ${input}`);
@@ -34,7 +33,6 @@
 
   let callPrinter = createFunctionPrinter();
   callPrinter("Closures are interesting...");
-
 
   /*
    * Challenge 3
@@ -65,7 +63,6 @@ willCounter(); //Will return 3
 jasCounter();  //Will return 1;
 willCounter(); //Will return 4;
 
-
 /*
  * Challenge 4
  * Now we are going to create a function addByX 
@@ -73,10 +70,10 @@ willCounter(); //Will return 4;
  * by x.
  */
 function addByX(adderVal) {
-    function addIt(number) {
+    function getSumOfTwoNumbers(number) {
         console.log(number + adderVal);
     }
-    return addIt;
+    return getSumOfTwoNumbers;
 }
 
 var addByTwo = addByX(2)
@@ -92,8 +89,6 @@ var addByFour = addByX(4);
 addByFour(4); //should return 8
 addByFour(10); //should return 14
 
-
-
 /*
  * Extension: Challenge 5
  * Write a function once that accepts a callback 
@@ -103,4 +98,17 @@ addByFour(10); //should return 14
  * any additional times, instead of calling the callback 
  * again it will simply return the output value from the 
  * first time it was called.
-*/
+ */
+function once(callback) {
+    function returnMe() {
+        callback();
+    }
+    return returnMe;
+}
+
+function aCallBack() {
+    console.log("Callback....");
+}
+
+let returnedFunction = once(aCallBack);
+returnedFunction();
