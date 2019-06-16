@@ -26,11 +26,7 @@ function logIt() {
 
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 2');
-
-console.log('Start of Challenge 2');
-
 setInterval(logIt, 2000);
-
 function logIt() {
     console.log("Interval Hello!");
 }
