@@ -21,4 +21,5 @@ const App = () => {
   ]);
 };
 
+//Render the App component into the root DOM node.
 render(React.createElement(App), document.getElementById("root"));
