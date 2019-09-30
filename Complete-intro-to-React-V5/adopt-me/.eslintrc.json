@@ -1,6 +1,6 @@
 {
   "extends": ["eslint:recommended", "prettier", "prettier/react"],
-  "plugins": [],
+  "plugins": ["react-hooks", "react", "import", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -12,5 +12,10 @@
     "es6": true,
     "browser": true,
     "node": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
+    "react/prop-types": 0
   }
 }
