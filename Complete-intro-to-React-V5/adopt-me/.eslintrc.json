@@ -1,5 +1,10 @@
 {
   "extends": ["eslint:recommended", "prettier", "prettier/react"],
+  "rules": {
+    "react-hooks/rules-of-hooks": 2, //Error
+    "react-hooks/exhaustive-deps": 1, //Warn
+    "react/prop-types": 0
+  },
   "plugins": ["react-hooks", "react", "import", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -12,10 +17,5 @@
     "es6": true,
     "browser": true,
     "node": true
-  },
-  "rules": {
-    "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 1,
-    "react/prop-types": 0
   }
 }
